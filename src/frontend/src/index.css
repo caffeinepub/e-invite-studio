@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=DM+Sans:wght@300;400;500;600&family=Parisienne&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Blush/Rose palette */
+    --background: 0.96 0.015 15;
+    --foreground: 0.18 0.01 15;
+
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.01 15;
+
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.01 15;
+
+    /* Gold accent */
+    --primary: 0.63 0.09 75;
+    --primary-foreground: 1 0 0;
+
+    /* Lavender secondary */
+    --secondary: 0.91 0.025 290;
+    --secondary-foreground: 0.25 0.02 290;
+
+    --muted: 0.95 0.012 15;
+    --muted-foreground: 0.5 0.01 15;
+
+    --accent: 0.88 0.03 290;
+    --accent-foreground: 0.25 0.02 290;
+
+    --destructive: 0.577 0.245 27;
+    --destructive-foreground: 1 0 0;
+
+    --border: 0.88 0.02 15;
+    --input: 0.88 0.02 15;
+    --ring: 0.63 0.09 75;
+
+    /* Chart */
+    --chart-1: 0.63 0.09 75;
+    --chart-2: 0.75 0.05 350;
+    --chart-3: 0.7 0.06 290;
+    --chart-4: 0.8 0.08 30;
+    --chart-5: 0.65 0.07 200;
+
+    /* Sidebar */
+    --sidebar: 0.97 0.01 15;
+    --sidebar-foreground: 0.18 0.01 15;
+    --sidebar-primary: 0.63 0.09 75;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.91 0.025 290;
+    --sidebar-accent-foreground: 0.25 0.02 290;
+    --sidebar-border: 0.88 0.02 15;
+    --sidebar-ring: 0.63 0.09 75;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "DM Sans", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Playfair Display", serif;
+  }
+}
+
+.font-script {
+  font-family: "Parisienne", cursive;
+}
+
+.font-serif {
+  font-family: "Playfair Display", serif;
+}
+
+.font-sans {
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Blush gradient backgrounds */
+.bg-blush-gradient {
+  background: linear-gradient(
+    135deg,
+    oklch(0.94 0.025 15),
+    oklch(0.96 0.018 20)
+  );
+}
+
+.bg-lavender-gradient {
+  background: linear-gradient(
+    135deg,
+    oklch(0.9 0.03 290),
+    oklch(0.93 0.025 295)
+  );
+}
+
+.bg-hero-gradient {
+  background: linear-gradient(
+    160deg,
+    oklch(0.97 0.018 15) 0%,
+    oklch(0.95 0.02 20) 50%,
+    oklch(0.93 0.025 290) 100%
+  );
+}
